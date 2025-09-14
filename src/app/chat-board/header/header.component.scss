@@ -17,20 +17,29 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 17.5px 55px 17.5px 45px;
-        gap: 16px;
+        padding: 17.5px 32px 17.5px 45px;
         background: white;
         border-radius: 50px;
         width: 40%;
 
         >input {
             font-size: 24px;
-            width: 100%;
+            width: 90%;
             border: none;
 
             &:focus {
                 outline: none;
             }
+
+            &:placeholder {
+                color: #808080;
+            }
+        }
+
+        >span-lucide {
+            display: flex;
+            align-items: center;
+            color: #808080;
         }
     }
 
@@ -48,6 +57,11 @@ header {
         >img {
             width: 70px;
             border-radius: 50px;
+        }
+
+        >span-lucide {
+            display: flex;
+            align-items: center;
         }
     }
 }
