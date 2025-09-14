@@ -4,6 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Nunito';
 
     #logo-area {
         display: flex;
@@ -14,11 +15,23 @@ header {
 
     #input-area {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         padding: 17.5px 55px 17.5px 45px;
         gap: 16px;
         background: white;
         border-radius: 50px;
+        width: 40%;
+
+        >input {
+            font-size: 24px;
+            width: 100%;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
     }
 
     #user-area {
