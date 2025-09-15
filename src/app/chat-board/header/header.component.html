@@ -10,6 +10,13 @@
     <div id="user-area">
         <span>Guest</span>
         <img src="/assets/images/avatar.png" alt="">
-        <span-lucide [img]="ChevronDownIcon" class="chevron-down-icon"></span-lucide>
+        <span-lucide [img]="menuIcon" class="chevron-down-icon" (click)="displayMenu()"></span-lucide>
     </div>
 </header>
+@if (menuShown) {
+    <div id="user-menu">
+        <span>Benachrichtigungen</span>
+        <span>Profil</span>
+        <span>Log out</span>
+    </div>
+}

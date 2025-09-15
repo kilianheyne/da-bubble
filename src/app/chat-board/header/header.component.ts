@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ChevronDown, LucideAngularModule, SearchIcon } from 'lucide-angular';
+import { LucideAngularModule, MenuIcon, SearchIcon } from 'lucide-angular';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +9,12 @@ import { ChevronDown, LucideAngularModule, SearchIcon } from 'lucide-angular';
 })
 export class HeaderComponent {
   readonly SearchIcon = SearchIcon;
-  readonly ChevronDownIcon = ChevronDown;
+  readonly menuIcon = MenuIcon;
+  menuShown: boolean = true;
+
+  constructor() {}
+
+  displayMenu(): void {
+    this.menuShown = !this.menuShown;
+  }
 }
