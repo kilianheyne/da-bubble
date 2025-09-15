@@ -14,9 +14,11 @@
     </div>
 </header>
 @if (menuShown) {
-    <div id="user-menu">
-        <span>Benachrichtigungen</span>
-        <span>Profil</span>
-        <span>Log out</span>
+    <div id="overlay" (click)="displayMenu()">
+        <div id="user-menu" (click)="$event.stopPropagation()">
+            <span>Benachrichtigungen</span>
+            <span>Profil</span>
+            <span>Log out</span>
+        </div>
     </div>
 }

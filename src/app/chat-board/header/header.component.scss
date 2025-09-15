@@ -83,29 +83,35 @@ header {
     }
 }
 
-#user-menu {
+#overlay {
     position: absolute;
-    top: 134px;
-    right: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    gap: 16px;
-    border-radius: 30px 0 30px 30px;
-    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
 
-    span {
-        font-size: 24px;
-        font-weight: 600;
-        font-family: 'Nunito';
-        padding: 10px 45px;
-
-        &:hover {
-            cursor: pointer;
-            color: #5157f0;
-            background: #edefff;
-            border-radius: 25px;
+    #user-menu {
+        position: absolute;
+        top: 134px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        gap: 16px;
+        border-radius: 30px 0 30px 30px;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    
+        span {
+            font-size: 24px;
+            font-weight: 600;
+            font-family: 'Nunito';
+            padding: 10px 45px;
+    
+            &:hover {
+                cursor: pointer;
+                color: #5157f0;
+                background: #edefff;
+                border-radius: 25px;
+            }
         }
     }
 }
